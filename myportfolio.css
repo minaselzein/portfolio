@@ -1,0 +1,125 @@
+@font-face {
+  font-family: Poppins regular;
+  src: url(Assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+  font-family: Poppins regular;
+  margin: 0;
+}
+.nav-bar {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: sticky;
+  scroll-behavior: smooth;
+  align-items: center;
+  top: 0;
+  background-color: rgba(15, 15, 15, 0.403);
+  box-shadow: 0 8px 24px;
+}
+.nav-item {
+  color: rgb(211, 205, 171);
+  text-decoration: none;
+  display: flex;
+}
+.header {
+  font-size: 24px;
+  margin: 0;
+}
+
+#hero {
+  font-family: poppins regular;
+  color: rgb(211, 205, 171);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 85vh;
+  max-width: 1000px;
+  margin: auto;
+}
+.left {
+  flex-basis: 40%;
+  margin-top: -20px;
+  background-position: fixed;
+}
+.right {
+  flex-basis: 40%;
+}
+.header-img {
+  width: 400px;
+  height: 300px;
+  border-radius: 50%;
+}
+#services {
+  background-color: rgb(7, 6, 6);
+  width: 100%;
+  padding: 64px 32px;
+}
+
+.subheading {
+  text-align: center;
+  font-size: 56px;
+  color: antiquewhite;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.service-card {
+  border: 1px solid #ffa60098;
+  border-image: linear-gradient(to right, #ffa60098 0%, #ffcd8a 100%) 1;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all 1s ease-out;
+  margin-bottom: 45px;
+}
+
+.service-card:hover {
+  cursor: pointer;
+  background-color: rgba(255, 185, 56, 0.75);
+  transform: translateY(-10px);
+}
+
+.service-name {
+  color: white;
+  text-decoration: none;
+}
+
+.tech-icon1 {
+  object-fit: contain;
+  height: 16px;
+}
+
+@media only screen and (max-width: 740px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+  }
+  .hero-header {
+    text-align: center;
+    font-size: 40px;
+  }
+  p {
+    text-align: center;
+  }
+  .left {
+    flex-basis: 0;
+  }
+  .header-img {
+    width: 9%;
+    margin-left: 16px;
+  }
+}
